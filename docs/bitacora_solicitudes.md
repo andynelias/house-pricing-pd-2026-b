@@ -232,6 +232,19 @@ una solicitud nueva, se debe añadir una entrada al final siguiendo el mismo for
   la sección 7 del documento de contexto.
 - Se actualizó la memoria de Claude (estado del proyecto y notas técnicas).
 
+## 18. Repositorio git del proyecto
+- Se solicitó construir un repositorio git del proyecto.
+- Decisiones del usuario: excluir `data/` (los datos de Kaggle no se redistribuyen), no versionar
+  los modelos (`models/*.joblib`, se regeneran con los notebooks 2.0 y 3.0), notebooks con
+  salidas, repositorio solo local (sin remoto), excluir `hola.py`, y un commit por etapa.
+- Se actualizó `.gitignore` (`/models/*.joblib`, `/hola.py`) y se reescribió `README.md` en
+  español: resultados, cómo descargar los datos, orden de ejecución de los notebooks, inferencia,
+  pruebas y estructura.
+- `git init` en la rama `main` con 6 commits: estructura base, EDA, ingeniería de
+  características, torneo e inferencia, script de inferencia y pruebas, documentación.
+- Revisión previa: sin credenciales ni correos en los archivos versionados. Las salidas de los
+  notebooks contienen la ruta local del proyecto (incluye el nombre de usuario de Windows).
+
 ---
 
 > **Nota:** Añadir una nueva entrada numerada a este archivo cada vez que se complete una
