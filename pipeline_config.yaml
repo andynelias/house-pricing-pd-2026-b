@@ -1,0 +1,38 @@
+# Configuración del pipeline de modelado — House Pricing
+# Features seleccionadas en notebooks/1.0-ae-analisis-exploratorio.ipynb (sección 9):
+# top 10 por |Pearson| con SalePrice (continuas y discretas) y top 10 por η (categóricas).
+
+MODEL_FEATURES:
+  # Continuas
+  - GrLivArea
+  - GarageArea
+  - TotalBsmtSF
+  - 1stFlrSF
+  - YearBuilt
+  - YearRemodAdd
+  - GarageYrBlt
+  - MasVnrArea
+  - BsmtFinSF1
+  - LotFrontage
+  # Discretas
+  - OverallQual
+  - GarageCars
+  - FullBath
+  - TotRmsAbvGrd
+  - Fireplaces
+  - HalfBath
+  - BsmtFullBath
+  - BedroomAbvGr
+  - KitchenAbvGr
+  - PoolArea
+  # Categóricas
+  - Neighborhood
+  - ExterQual
+  - BsmtQual
+  - KitchenQual
+  - GarageFinish
+  - FireplaceQu
+  - Foundation
+  - GarageType
+  - BsmtFinType1
+  - HeatingQC
