@@ -1,7 +1,7 @@
 # Contexto para la siguiente sesión — House Pricing
 
 Documento de traspaso: resume el estado actual del proyecto y lo necesario para retomar el trabajo.
-Última actualización: 2026-11-14 (tras crear el repositorio git).
+Última actualización: 2026-11-14 (tras subir el repositorio a GitHub).
 
 ---
 
@@ -28,7 +28,7 @@ Documento de traspaso: resume el estado actual del proyecto y lo necesario para 
 | **API con FastAPI** | **Siguiente paso probable** (el usuario anticipó que consumirá `predict.py`) |
 | Ajustes del torneo (sección 8) | Pendiente de decisión del usuario |
 | Envío de `predictions.csv` a Kaggle | No realizado |
-| Repositorio git (local, rama `main`) | Creado; sin remoto todavía |
+| Repositorio git | En GitHub: `origin` = https://github.com/andynelias/house-pricing-pd-2026-b (público), rama `main` |
 
 ## 3. Archivos clave
 | Archivo | Para qué sirve |
@@ -150,7 +150,8 @@ NRMSE = RMSE real / rango de `SalePrice` en validación (416,639).
 3. **Features débiles:** `PoolArea`, `KitchenAbvGr`, `BedroomAbvGr`.
 4. **Zero-inflated** (`MasVnrArea`, `BsmtFinSF1`): sus indicadoras binarias (recomendación del EDA)
    no se crearon.
-5. **Git:** repositorio local en `main`, sin remoto. No se versionan `data/`, `models/*.joblib`,
+5. **Git:** rama `main` sincronizada con `origin` (GitHub, público; credencial en Git Credential
+   Manager). Los commits no llevan `Co-Authored-By`. No se versionan `data/`, `models/*.joblib`,
    `hola.py`, logs ni `.env`: tras clonar hay que descargar los datos y ejecutar los notebooks 2.0
    y 3.0 (ver README). El proyecto está dentro de OneDrive: evitar trabajar en la misma copia
    desde dos equipos a la vez, porque la sincronización puede corromper `.git`.

@@ -245,6 +245,15 @@ una solicitud nueva, se debe añadir una entrada al final siguiendo el mismo for
 - Revisión previa: sin credenciales ni correos en los archivos versionados. Las salidas de los
   notebooks contienen la ruta local del proyecto (incluye el nombre de usuario de Windows).
 
+## 19. Push al repositorio remoto en GitHub
+- Se solicitó subir el repositorio a un remoto. Remoto: `origin` =
+  https://github.com/andynelias/house-pricing-pd-2026-b.git (público, creado vacío). El usuario
+  aceptó que la ruta local visible en las salidas de los notebooks quede pública.
+- Antes del push se reescribieron los 7 commits para quitar la línea `Co-Authored-By` (pedido del
+  usuario); los commits del proyecto no la llevan.
+- Autenticación por HTTPS con un token personal que el usuario ingresó en Git Credential Manager
+  (no se compartió por el chat). `main` sigue a `origin/main`.
+
 ---
 
 > **Nota:** Añadir una nueva entrada numerada a este archivo cada vez que se complete una
